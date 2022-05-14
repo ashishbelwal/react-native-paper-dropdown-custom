@@ -76,6 +76,7 @@ const DropDown = forwardRef<TouchableWithoutFeedback, DropDownPropsInterface>(
       dropDownContainerMaxHeight,
       dropDownContainerHeight,
       theme,
+      style,
       dropDownStyle,
       dropDownItemStyle,
       dropDownItemSelectedStyle,
@@ -160,6 +161,7 @@ const DropDown = forwardRef<TouchableWithoutFeedback, DropDownPropsInterface>(
                 placeholder={placeholder}
                 pointerEvents={"none"}
                 theme={theme}
+                style={style}
                 right={
                   <TextInput.Icon name={visible ? "menu-up" : "menu-down"} />
                 }
@@ -178,6 +180,8 @@ const DropDown = forwardRef<TouchableWithoutFeedback, DropDownPropsInterface>(
         <ScrollView
           bounces={false}
           style={{
+            marginTop: -8,
+          marginBottom: -8,
             ...(dropDownContainerHeight
               ? {
                   height: dropDownContainerHeight,
