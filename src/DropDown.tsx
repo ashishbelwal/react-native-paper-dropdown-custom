@@ -46,6 +46,7 @@ export interface DropDownPropsInterface {
   dropDownContainerMaxHeight?: number;
   dropDownContainerHeight?: number;
   activeColor?: string;
+  style?: any;
   theme?: Theme;
   dropDownStyle?: ViewStyle;
   dropDownItemSelectedTextStyle?: TextStyle;
